@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito de Compra</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+    <style>
+        body {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.863);
+
+            /*background-image: url(https://i.pinimg.com/originals/f1/47/2f/f1472f334b2df7c0002176ddf26ca638.jpg);*/
+        }
+
+        .panel-body {
+            background-color: rgba(0, 0, 0, 0.685);
+            padding: 10px;
+            color: white;
+
+        }
+
+        .row {
+            padding: 10px;
+
+        }
+
+        .panel-footer {
+            background-color: rgb(33, 34, 34);
+
+        }
+
+        .text-right,
+        .col-xs-6 {
+            color: white;
+        }
+
+
+        #heading {
+            background-color: rgb(33, 34, 34);
+        }
+
+        .glyphicon-trash {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="heading">
+                        <div class="panel-title">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h3><span class="glyphicon glyphicon-shopping-cart"></span> Carrito de Compras</h3>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button type="button" class="btn btn-primary btn-sm btn-block">
+                                        <span class="glyphicon glyphicon-share-alt"></span> Continuar comprando...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-2"><img class="img-responsive"
+                                    src="https://guich.mx/img/menu/N20188685L.jpg">
+                            </div>
+                            <div class="col-xs-4">
+                                <h4 class="product-name"><strong>Panini #2 Grand Turkey</strong></h4>
+                                <h4><small>Jamón de Pavo, Mayonesa, Crujiente Tocino, Queso Mozarella y Lechuga</small>
+                                </h4>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="col-xs-6 text-right">
+                                    <h6><strong>49.00 <span class="text-muted">x</span></strong></h6>
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control input-sm" value="1">
+                                </div>
+                                <div class="col-xs-2">
+                                    <button type="button" class="btn btn-link btn-xs">
+                                        <span class="glyphicon glyphicon-trash"> </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-2"><img class="img-responsive"
+                                    src="https://guich.mx/img/menu/Z20182226K.jpg">
+                            </div>
+                            <div class="col-xs-4">
+                                <h4 class="product-name"><strong>Licuado Super Héroe</strong></h4>
+                                <h4><small>Jugo de naranja, miel, durazno, zarzamora, yogurt griego y limón</small></h4>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="col-xs-6 text-right">
+                                    <h6><strong>43.00 <span class="text-muted">x</span></strong></h6>
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control input-sm" value="1">
+                                </div>
+                                <div class="col-xs-2">
+                                    <button type="button" class="btn btn-link btn-xs">
+                                        <span class="glyphicon glyphicon-trash"> </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--Time Set-->
+                        <div id="datetimepicker3" class="input-append">
+                            <h4>Elige Hora de Entrega:</h4>
+                            <input data-format="hh:mm:ss" type="text"></input>
+                            <span class="add-on">
+                                <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                                </i>
+                            </span>
+                        </div>
+                        <script type="text/javascript"
+                            src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+                        </script>
+                        <script type="text/javascript"
+                            src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+                        </script>
+                        <script type="text/javascript"
+                            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+                        </script>
+                        <script type="text/javascript"
+                            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+                        </script>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker3').datetimepicker({
+                                    pickDate: false
+                                });
+                            });
+                        </script>
+                        <!--
+                        <div class="row">
+                            <div class="text-center">
+                                <div class="col-xs-9">
+                                    <h6 class="text-right">Added items?</h6>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button type="button" class="btn btn-default btn-sm btn-block">
+                                        Update cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row text-center">
+                            <div class="col-xs-9">
+                                <h4 class="text-right">Total <strong>$52.00</strong></h4>
+                            </div>
+                            <div class="col-xs-3">
+                                <button type="button" class="btn btn-success btn-block btn-lg">
+                                    Finalizar Compra
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

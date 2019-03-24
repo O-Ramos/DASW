@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Tarjeta Bancaria</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+    <style>
+        body {
+            background-color: rgb(34, 34, 34);
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            line-height: 22px;
+
+        }
+
+        h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 400;
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .card {
+            background-color: rgba(22, 10, 10, 0.425)
+        }
+
+        hr {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <aside class="col-sm-6">
+                <h1 class="entry-title"><span>Registro de Tarjeta</span> </h1>
+                <hr>
+
+
+                <article class="card">
+                    <div class="card-body p-5">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="username">Nombre de Titular</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" name="username"
+                                        placeholder="Nombre Completo" required="">
+                                </div> <!-- input-group.// -->
+                            </div> <!-- form-group.// -->
+
+                            <div class="form-group">
+                                <label for="cardNumber">Número de Tarjeta</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" name="cardNumber" placeholder="No. Tarjeta">
+                                </div> <!-- input-group.// -->
+                            </div> <!-- form-group.// -->
+
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label><span class="hidden-xs">Fecha de Vencimiento</span> </label>
+                                        <div class="form-inline">
+                                            <select class="form-control" style="width:45%">
+                                                <option>Mes</option>
+                                                <option>01 - Enero</option>
+                                                <option>02 - Febrero</option>
+                                                <option>03 - Marzo</option>
+                                                <option>04 - Marzo</option>
+                                                <option>05 - Abril</option>
+                                                <option>06 - Mayo</option>
+                                                <option>07 - Junio</option>
+                                                <option>08 - Julio</option>
+                                                <option>09 - Agosto</option>
+                                                <option>10 - Septiembre</option>
+                                                <option>11 - Noviembre</option>
+                                                <option>12 - Diciembre</option>
+                                            </select>
+                                            <span style="width:10%; text-align: center"> / </span>
+                                            <select class="form-control" style="width:45%">
+                                                <option>Año</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label data-toggle="tooltip" title=""
+                                            data-original-title="3 digits code on back side of the card">CVV <i
+                                                class="fa fa-question-circle"></i></label>
+                                        <input class="form-control" required="" type="text" placeholder="---">
+                                    </div> <!-- form-group.// -->
+                                </div>
+                            </div> <!-- row.// -->
+                            <button class="subscribe btn btn-danger btn-lg" type="button"> Cancelar </button>
+                            <button class="subscribe btn btn-success btn-lg" type="button"> Confirmar </button>
+
+                        </form>
+                    </div> <!-- card-body.// -->
+                </article> <!-- card.// -->
+            </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div>
+    <!--container end.//-->
+</body>
+
+</html>
