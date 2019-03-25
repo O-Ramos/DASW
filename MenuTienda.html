@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link rel="icon" href="./img/vcard.ico">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-sm bg-dark fixed-top justify-content-between">
+
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ITESO-eats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Cerrar Sesión</button></a>
+              </li>
+          </ul>
+        
+        </nav>
+    <div class="tienda">
+    <img class="img-responsive" src="ham.jpg" alt="Chania" width="100%" height="400">
+    <h2>Chicanita (Cafetería ITESO) </h2> <br>
+    <p> $$ • Pizza • Hamburguesa</p>
+    <p id="tiendaTiempo">15-25 min</p>
+    
+  </div>
+
+  <div class="menu mt-5 mb-5 text-center" >
+      <h2>Menú</h2>
+  </div>
+ 
+       
+    
+  
+
+    <div class="ml-5 mt-5 d-flex justify-content-around" id="modelo">
+        <div class="media-right align-self-right mr-3">
+            <img src="hamburguesa1.jpg" width="250px" height="180px">
+        </div>
+        <div class="media-body">
+            <h4 >Hamburguesa con papas</h4>
+            <p >Deliciosa hamburguesa con papas </p>
+            <p >60 MXN</p>
+            <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+        <div class="media-right align-self-center mr-3">
+            <img src="pizza1.jpg" width="250px" height="180px">
+        </div>
+        <div class="media-body">
+            <h4 >Pizza Chicanita</h4>
+            <p >Deliciosa pizza de peperoni con queso extra </p>
+            <p >99 MXN</p>
+            <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+        </div>
+
+        <div class="ml-5 mt-5 d-flex justify-content-around">
+            <div class="media-right align-self-right mr-3">
+                <img src="Combo1.jpg" width="250px" height="180px">
+            </div>
+            <div class="media-body">
+                <h4 >Paquete Pizza + Refresco</h4>
+                <p>Dos rebanadas de pizza a tu elección más un refresco de 600ml</p>
+                <p >69 MXN</p>
+                <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+            <div class="media-right align-self-center mr-3">
+                <img src="combo2.jpg" width="250px" height="180px">
+            </div>
+            <div class="media-body">
+                <h4 >Paquete Hamburguesa con papas + Refresco</h4>
+                <p >Hamburguesa con papas más un refresco de 600ml </p>
+                <p >79 MXN</p>
+                <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+            </div>
+
+       
+ 
+        <style>
+          body{
+  background-color:rgb(47, 46, 53);
+  color: white;
+}
+
+          .tienda{
+            display:flexbox;
+          }
+        .tienda h2{
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    right: 20%;
+    bottom: 20%;
+    padding: 20px;
+    width: 30%;
+    height: 40%;
+    background:#FFF;
+    border-radius: 15px 50px 30px 5px;
+    color:black;
+        }
+
+        .tienda p {
+    position: absolute;
+    left: 22%;
+    top: 40%;
+    right:50%;
+    color:black;
+    background:#FFF;
+        }
+
+    #tiendaTiempo {
+      position: absolute;
+      left: 22%;
+    top: 46%;
+    right:40%;
+    width: max-content;
+    background:#FFF;
+    background:darkgray;
+    color:black;
+    }
+    .navbar-nav,
+.mr-auto {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
+
+
+</style>
+
+
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
